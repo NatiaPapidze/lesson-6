@@ -1,0 +1,27 @@
+.background{
+    background-size: 100%;
+    background-image: url("https://www.wallpapertip.com/wmimgs/16-163546_ballroom-beauty-and-the-beast-background-hd.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 15px;
+    right: 40%;
+}
+
+.prince img{
+    position: relative;
+    width: 1200px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 6;
+    display: inline-block;
+}
+
+
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+
