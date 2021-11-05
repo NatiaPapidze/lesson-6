@@ -1,27 +1,88 @@
 .background{
-    background-size: 100%;
-    /* height: 1500px; */
     background-image: url("https://www.wallpapertip.com/wmimgs/16-163546_ballroom-beauty-and-the-beast-background-hd.jpg");
+    background-size:100%;
     background-repeat: no-repeat;
-    position: absolute;
-    bottom: 5px;
-    right: 40%;
-}
-
-.prince img{
     position: relative;
-    width: 400px;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: 6;
 }
 
+.beauty img{
+    bottom: -640px;
+    width: 370px;
+    position: absolute;
+    animation: beauty 8s infinite;
+    display: inline-block;
+    z-index: 2;
+    
+}
+@keyframes beauty{
+    0%{left: 450px; transform:rotate(0deg);}
+    25%{left: 550px; transform:rotate(8deg);}
+    50%{left: 650px; transform:rotate(-8deg);}
+    75%{left: 550px; transform:rotate(8deg);}
+    100%{left: 450px; transform:rotate(-8deg);}
+}
 
-@keyframes example {
-    0%   {left:0px; top:0px;}
-    25%  {left:200px; top:0px;}
-    50%  {left:200px; top:200px;}
-    75%  { left:0px; top:200px;}
-    100% {left:0px; top:0px;}
-  }
+.cheap img{
+    /* bottom: -1000px; */
+    width: 150px;
+    position: absolute;
+    animation: chip 2s infinite;
+    display: inline-block;
+}
 
+@keyframes chip{
+    0%{top: 500px; transform:rotate(0deg);}
+    25%{top: 100px; transform:rotate(8deg);}
+    50%{top: 500px; transform:rotate(-8deg);}
+    75%{top: 100px; transform:rotate(8deg);}
+    100%{top: 500px; transform:rotate(-8deg);}
+}
+
+ .lumiere img{
+    width: 150px;
+    bottom: -650px;
+    right: -200px;
+    position: absolute;
+    right: -200px;
+    animation: lumiere 2s infinite;
+    display: inline;
+ }   
+ @keyframes lumiere{
+    0%{right: 80px; transform:rotate(0deg);}
+    25%{right: 110px; transform:rotate(8deg);}
+    50%{right: 140px; transform:rotate(-8deg);}
+    75%{right: 110px; transform:rotate(8deg);}
+    100%{right: 80px; transform:rotate(-8deg);}
+}
+
+.wardrobe img{
+    width: 140px;
+   right: 280px;
+   bottom: -600px;
+    position: absolute;
+    animation: wardrobe 3s infinite;
+}
+
+@keyframes wardrobe{
+    0%{transform:rotate(0deg);}
+    25%{transform:rotate(10deg);}
+    50%{transform:rotate(-10deg);}
+    75%{transform:rotate(10deg);}
+    100%{ transform:rotate(-10deg);}
+
+}
+
+.potts img{
+    width: 150px;
+    right: 1000px;
+    position: absolute;
+    animation: potts 2s infinite;
+}
+
+@keyframes potts{
+    0%{top: 450px; transform:rotate(0deg);}
+    25%{top: 100px; transform:rotate(8deg);}
+    50%{top: 450px; transform:rotate(-8deg);}
+    75%{top: 100px; transform:rotate(8deg);}
+    100%{top: 450px; transform:rotate(-8deg);}
+}
